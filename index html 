@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'mas Java Guitar Indonesia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background: url('IMG_20250911_043726.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .card {
+      position: relative;
+      z-index: 1;
+      background: rgba(255,255,255,0.1);
+      padding: 30px 50px;
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .buttons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    a.button {
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      transform: scale(1.1);
+      filter: brightness(1.2);
+    }
+    a.facebook { background: #1877f2; }
+    a.instagram { background: #e4405f; }
+    a.whatsapp { background: #25d366; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>D'mas Java Guitar Indonesia 🎸</h1>
+    <p>Exotic Wood – Handmade with Passion</p>
+    <div class="buttons">
+      <a href="https://facebook.com/username" target="_blank" class="button facebook">Facebook</a>
+      <a href="https://instagram.com/username" target="_blank" class="button instagram">Instagram</a>
+      <a href="https://wa.me/6281234567890" target="_blank" class="button whatsapp">WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>
